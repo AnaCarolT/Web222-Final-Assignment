@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+h1,h2,h3,h4,h5{
+    font-family: "Open Sans" , sans-serif;
+}
+
+p,em,span, a,title, label, button,li,ul,ol{
+    font-family: "Raleway", sans-serif;
+}
+
+html, body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.page-heading h1 p {
+    font-size: 3em;
+    margin: .3em;
+}
+
+.page-heading{
+    padding: 2em;
+    color: white;
+    background: linear-gradient(90deg, #4b4cb7 0%, #182848 100%);
+}
+
+nav h3{
+    padding: 1rem;
+    margin: 1rem;
+}
+nav{
+    color: white;
+    background-color: black;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav .align-right{
+    margin-left: auto;
+
+}
+
+article{
+    padding: .5em 1em;
+    flex: 75%;
+}
+
+footer{
+    padding: .3em;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.introduction{
+    text-align: center;
+}
+
+.me img{
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media{
+    text-align: center;
+}
+
+#photos, #videos{
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+}
+
+#photo img, #videos img{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #photos, #videos {
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        justify-content: center; /* Center images horizontally */
+    }
+
+    #photo img, #videos img {
+        max-width: calc(50% - 10px); /* Two images per row */
+        margin-bottom: 10px; /* Add some spacing between rows */
+    }
+}
